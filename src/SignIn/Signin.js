@@ -57,8 +57,13 @@ const Signin = ({onRouteChange, loadUser}) => {
 		      <p onClick={() => onRouteChange('register')}  className="f4 link dim black db grow pointer">Register</p>
 		    </div>
 		  </div>
+
+		  
 	</main>
+
 </article>
+
+
 
 	)
 }
