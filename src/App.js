@@ -134,7 +134,7 @@ function App() {
         .then(result => {
 
           if (result) {
-            fetch('https://mybackend-6o8n.onrender.com/image', {
+            fetch('http://localhost:3000/image', {
               method: 'put',
         			headers: {'Content-Type': 'application/json'},
         			body: JSON.stringify({

@@ -15,7 +15,7 @@ const Signin = ({onRouteChange, loadUser}) => {
 	}
 
 	const onSubmitSignIn = () => {
-		fetch('https://mybackend-6o8n.onrender.com/signin', {
+		fetch('http://localhost:3000/signin', {
 			method: 'post',
 			headers: {'Content-Type': 'application/json'},
 			body: JSON.stringify({
@@ -32,6 +32,7 @@ const Signin = ({onRouteChange, loadUser}) => {
 	}
 
 	return (
+		<div style={{display:'flex', flexDirection:'column',alignItems:'center'}}>
 	<article className="br3 ba dark-gray b--black-10 mv5 w-100 w-50-m w-25-l mw6 shadow-5 center">
 			<main className="pa5 black-80">
 		  <div className="measure">
@@ -61,7 +62,23 @@ const Signin = ({onRouteChange, loadUser}) => {
 		  
 	</main>
 
+
+	
+
 </article>
+
+<div style={{width: '550px', height: '100vh' }}>
+  <p className="f5 pa3">
+    Important note: Since I'm hosting this project for free, the app automatically
+    spuns down after 15 minutes of inactivity. So, the first time you Sign in/Register,
+    please be patient. It usually takes a minute, and then it works as intended!
+  </p>
+</div>
+
+
+
+
+</div>
 
 
 
