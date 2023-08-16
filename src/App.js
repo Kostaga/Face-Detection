@@ -127,7 +127,7 @@ function App() {
       const onButtonSubmit = () => {
         setImageUrl(input)
 
-        if (imageUrl) {
+        
 
           fetch("https://api.clarifai.com/v2/models/face-detection/outputs", setUpClarify(input))
         .then(response => response.json())
@@ -152,7 +152,7 @@ function App() {
         } )
         .catch(error => console.log('Error', error));
 
-        }
+        
 
         
       }
